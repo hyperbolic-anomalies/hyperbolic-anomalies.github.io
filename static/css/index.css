@@ -183,3 +183,18 @@ body {
   padding-bottom: 3rem; */
 }
 
+/* Custom CSS for responsive iframe */
+.iframe-container {
+		position: relative;
+		width: 100%;
+		height: 100vh; /* Adjust this value as needed to control height */
+}
+
+.iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+}
