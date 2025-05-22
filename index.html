@@ -117,7 +117,7 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Is Hyperbolic Space All You Need for Medical Anomaly Detection?</h1>
           <h2 class="title is-3 publication-title">MICCAI 2025</h2>
-          
+					
 
           <!-- authors -->
             <div class="is-size-5 publication-authors">
@@ -150,18 +150,9 @@
           <!-- Button for different release formats -->
           <div class="column has-text-centered">
             <div class="publication-links">
-              <span class="link-block">
-                <a href="./static/files/tloss.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
               <!-- Arxiv Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2306.00753"
+                <a href="https://arxiv.org/abs/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -180,7 +171,7 @@
                 </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/Digital-Dermatology/t-loss"
+                <a href="https://github.com/Digital-Dermatology/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -241,6 +232,88 @@
     </div>
   </section>
 <!--/ Abstract. -->
+
+<!-- Qualitative Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+        <p class="content has-text-justified mt-4">
+          Below we show representative qualitative results including the original image, predicted mask,
+          and the corresponding ground truth mask. The predicted mask highlights the detected anomalous regions,
+          while the ground truth serves as reference. 
+        </p>
+				<h2 class="title is-4 has-text-centered">BraTs Dataset</h2>
+        <!-- Grid of image + predicted + ground truth -->
+        <div class="columns is-multiline is-centered">
+          
+          <!-- Example block per sample -->
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Original Image</strong></p>
+            <figure class="image">
+              <img src="./static/images/brats/image_3.png" alt="Original Image">
+              <img src="./static/images/brats/image_4.png" alt="Original Image">
+							<img src="./static/images/brats/image_5.png" alt="Original Image">
+            </figure>
+          </div>
+
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Predicted Mask</strong></p>
+              <figure class="image">
+              <img src="./static/images/brats/pred_mask_3.png" alt="Original Image">
+              <img src="./static/images/brats/pred_mask_4.png" alt="Original Image">
+							<img src="./static/images/brats/pred_mask_5.png" alt="Original Image">
+            </figure>
+          </div>
+
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Ground Truth Mask</strong></p>
+						<figure class="image">
+              <img src="./static/images/brats/gt_mask_3.png" alt="Original Image">
+              <img src="./static/images/brats/gt_mask_4.png" alt="Original Image">
+							<img src="./static/images/brats/gt_mask_5.png" alt="Original Image">
+            </figure>
+          </div>
+
+        </div>
+
+				<h2 class="title is-4 has-text-centered">Liver Dataset</h2>
+        <!-- Grid of image + predicted + ground truth -->
+        <div class="columns is-multiline is-centered">
+          
+          <!-- Example block per sample -->
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Original Image</strong></p>
+            <figure class="image">
+              <img src="./static/images/liver/image_3.png" alt="Original Image">
+              <img src="./static/images/liver/image_4.png" alt="Original Image">
+							<img src="./static/images/liver/image_16.png" alt="Original Image">
+            </figure>
+          </div>
+
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Predicted Mask</strong></p>
+              <figure class="image">
+              <img src="./static/images/liver/pred_mask_3.png" alt="Original Image">
+              <img src="./static/images/liver/pred_mask_4.png" alt="Original Image">
+							<img src="./static/images/liver/pred_mask_16.png" alt="Original Image">
+            </figure>
+          </div>
+
+          <div class="column is-one-third has-text-centered">
+            <p class="is-size-6 mb-2"><strong>Ground Truth Mask</strong></p>
+						<figure class="image">
+              <img src="./static/images/liver/gt_mask_3.png" alt="Original Image">
+              <img src="./static/images/liver/gt_mask_4.png" alt="Original Image">
+							<img src="./static/images/liver/gt_mask_16.png" alt="Original Image">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Results -->
 <section class="section">
@@ -305,7 +378,7 @@
         <tr>
           <td>STFPM</td>
           <td>84.25<sub>81.87</sub><sup>86.63</sup></td>
-          <td>96.03<sub>96.43</sub><sup>95.63</sup></td>
+          <td>96.03<sub>95.63</sub><sup>96.43</sup></td>
           <td></td>
           <td>61.48<sub>59.81</sub><sup>63.15</sup></td>
           <td>96.26<sub>96.12</sub><sup>96.40</sup></td>
@@ -338,7 +411,7 @@
           <td>95.53<sub>95.48</sub><sup>95.58</sup></td>
           <td></td>
           <td>59.33<sub>59.19</sub><sup>59.47</sup></td>
-          <td>95.00<sub>95.01</sub><sup>94.99</sup></td>
+          <td>95.00<sub>94.99</sub><sup>95.01</sup></td>
           <td></td>
           <td>90.54<sub>90.44</sub><sup>90.64</sup></td>
           <td>95.87<sub>95.83</sub><sup>95.91</sup></td>
@@ -382,6 +455,17 @@
 	  </div>
 <!-- Table -->
 <!-- Graphs -->
+		<div class="has-text-justified pt-5">
+					<p>We further evaluate the robustness of our framework in a few-shot
+					setting, where only a limited number of normal images are available
+					for training. We experiment with {1, 3, 5, 10, 25} normal images
+					and compare our performance against PaDiM and PatchCore. Our
+					hyperbolic model significantly outperforms both baselines,
+					particularly in extreme data scarcity scenarios. 
+					</p>
+          <br>
+        </div>
+
 		<div class="iframe-container d-block d-lg-none">
 				<iframe class="is-fullwidth" src="interactive_plot_with_error_bands_subplots_and_legend_below.html" allowfullscreen></iframe>
 		</div>    
@@ -422,13 +506,11 @@
       </a>
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+        <div class="has-text-justified">
           <p>
             This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
             We thank the authors for open-sourcing the source code. 
           </p>
-        </div>
       </div>
     </div>
   </div>
